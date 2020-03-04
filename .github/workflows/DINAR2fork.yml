@@ -31,3 +31,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: DINAR2fork
+          committer: Mitchell Admin <itpp-bot@users.noreply.github.com>
