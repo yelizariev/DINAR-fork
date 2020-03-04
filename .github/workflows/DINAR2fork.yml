@@ -25,10 +25,12 @@ jobs:
           git fetch DINAR
       - name: Merge DINAR
         run: |
+          # Name must be specified to make merge commit
+          git config --global user.email "itpp-bot@users.noreply.github.com"
+          git config --global user.name "Mitchell Admin"          
           git merge DINAR/master
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: DINAR2fork
-          committer: Mitchell Admin <itpp-bot@users.noreply.github.com>
