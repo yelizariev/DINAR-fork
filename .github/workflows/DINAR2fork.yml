@@ -34,3 +34,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: DINAR2fork
+          title: DINAR2fork
+          body: |
+            > Made via .github/workflows/DINAR2fork.yml 
