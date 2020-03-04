@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout Fork
         uses: actions/checkout@v2-beta
+        with:
+          fetch-depth: 100
       - name: Fetch DINAR
         run: |
           git remote add DINAR https://github.com/itpp-labs/DINAR.git
